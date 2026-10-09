@@ -27,7 +27,7 @@ select e from Employee e
         left join fetch e.departments
 ```
 
-## Замечания по реализации
+## Комментарии
 
 1. `@ToString` из Lombok не используется: при обращении к ленивым коллекциям возможен неожиданный N+1.
 2. N+1 нет при `findAllFetchDepartments`: `departments` подгружаются явно через `left join fetch` (left — чтобы сотрудники без отделов тоже попали в выборку). Альтернатива — EntityGraph.
