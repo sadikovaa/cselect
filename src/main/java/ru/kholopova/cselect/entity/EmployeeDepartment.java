@@ -15,7 +15,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "employee_department") // todo убрать класс если заработает many-to-many
+@Table(name = "employee_department")
 public class EmployeeDepartment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

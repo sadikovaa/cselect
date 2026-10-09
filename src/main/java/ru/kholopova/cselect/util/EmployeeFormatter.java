@@ -21,7 +21,7 @@ public class EmployeeFormatter {
                 .append("id=").append(employee.getId())
                 .append(",fullname=").append(employee.getFullName())
                 .append(",email=").append(employee.getEmail())
-                .append(",birthDate=").append(employee.getBirthDate()) // todo форматирование даты?
+                .append(",birthDate=").append(employee.getBirthDate()) // todo возможно потребуется формотирование даты
                 .append(",\n  departments=[")
                 .append(employee.getDepartments().stream()
                         .map(EmployeeFormatter::toReadableString)

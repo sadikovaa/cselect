@@ -12,8 +12,8 @@ import java.util.List;
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
     @Query("""
-            SELECT e FROM Employee e
-                    LEFT JOIN FETCH e.departments
+            select e from Employee e
+                    left join fetch e.departments
             """)
     List<Employee> findAllFetchDepartments();
 }
