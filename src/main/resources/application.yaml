@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: cselect
+
+  datasource:
+    url: ${DATASOURCE_URL:jdbc:postgresql://localhost:5434/employees}
+    username: ${DATASOURCE_USERNAME:postgres}
+    password: ${DATASOURCE_PASSWORD:postgres}
+
+
+logging:
+  level:
+    root: OFF
